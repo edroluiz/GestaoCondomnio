@@ -1,0 +1,14 @@
+﻿version: '3.4'
+
+services:
+  facilitacondo.database:
+    image: postgres
+    container_name: facilitacondo-database
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres@2024
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - ../data/postgresql:/var/lib/postgresql/data

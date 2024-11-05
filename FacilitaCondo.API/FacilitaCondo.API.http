@@ -1,0 +1,6 @@
+@FacilitaCondo.API_HostAddress = http://localhost:5064
+
+GET {{FacilitaCondo.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
